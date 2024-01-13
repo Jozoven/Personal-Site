@@ -1,0 +1,107 @@
+.background {
+  background-color: antiquewhite;
+}
+
+span {
+  color: #d63384;
+}
+
+.stroke {
+  -webkit-text-stroke: 1px black;
+}
+
+.text {
+  text-align: justify;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: minmax(500px, 600px) minmax(500px, 600px);
+  grid-template-rows: repeat(9, auto);
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.himg {
+  height: 500px;
+  width: 500px;
+  border-radius: 120px 20px 120px 20px;
+  border: solid 7px orange;
+}
+
+.hobbies {
+  grid-column: span 2;
+  padding-bottom: 40px;
+}
+
+hr {
+  background-color: white;
+}
+
+.comics-pic {
+  grid-area: 4/1/5/2;
+}
+
+.programming-pic {
+  grid-area: 5/2/6/3;
+}
+
+.dama-p {
+  grid-area: 3/1/4/2;
+}
+
+.dama-pic {
+  grid-area: 3/2/4/3;
+}
+
+.c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.p {
+  padding-right: 40px;
+  padding-left: 40px;
+  font-size: 1.5rem;
+}
+
+.headers {
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* .watching-anime-header,
+.dama-header {
+  text-align: right;
+} */
+
+/* @media (max-width: 1000px) {
+  .himg {
+    width: 250px;
+    height: 250px;
+  }
+  .grid-container {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(9, auto);
+  }
+} */
+
+@media (max-width: 1000px) {
+  .hobbies {
+    padding-bottom: 20px;
+  }
+
+  .headers {
+    margin-bottom: 30px;
+  }
+  .himg {
+    width: 250px;
+    height: 250px;
+    margin-top: 30px;
+  }
+  .grid-container {
+    display: block;
+  }
+}
